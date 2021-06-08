@@ -1,5 +1,5 @@
 ---
-AWSTemplateFormatVersion: 2021-06-08
+AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   GitHubRepo:
     Type: String
@@ -19,7 +19,7 @@ Resources:
     Properties:
       Path: /
       AssumeRolePolicyDocument:
-        Version: 2021-06-08
+        Version: 2012-10-17
         Statement:
           - Effect: Allow
             Principal:
@@ -28,7 +28,7 @@ Resources:
       Policies:
         - PolicyName: root
           PolicyDocument:
-            Version: 2021-06-08
+            Version: 2012-10-17
             Statement:
               - Resource: "*"
                 Effect: Allow
@@ -58,7 +58,7 @@ Resources:
     Properties:
       Path: /
       AssumeRolePolicyDocument:
-        Version: 2021-06-08
+        Version: 2012-10-17
         Statement:
           - Effect: Allow
             Principal:
@@ -67,7 +67,7 @@ Resources:
       Policies:
         - PolicyName: root
           PolicyDocument:
-            Version: 2021-06-08
+            Version: 2012-10-17
             Statement:
               - Resource:
                   - !Sub arn:aws:s3:::${ArtifactBucket}/*
@@ -168,7 +168,7 @@ Resources:
               OutputArtifacts:
                 - Name: BuildOutputImage
               RunOrder: 1          
-              
+            
 Outputs:
   PipelineUrl:
     Value: !Sub https://console.aws.amazon.com/codepipeline/home?region=${AWS::Region}#/view/${Pipeline}

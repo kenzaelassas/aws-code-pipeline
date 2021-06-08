@@ -20,7 +20,7 @@ Code for creating and operating ML Ops pipeline is divided into <b>2 Github Repo
 ```
 
 ## Setup
-1. Open VS Code, and open the folder where repo was cloned. Folder structure should look like shown below 
+1. Open VS Code1, and open the folder where repo was cloned. Folder structure should look like shown below 
 
 ![ScreenShot](assets/folder_structure.PNG)
 

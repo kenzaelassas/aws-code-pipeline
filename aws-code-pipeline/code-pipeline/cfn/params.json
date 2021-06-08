@@ -1,0 +1,18 @@
+[
+    {
+      "ParameterKey": "GitHubRepo",
+      "ParameterValue": "aws-code-pipeline"
+    },
+    {
+        "ParameterKey": "GitHubBranch",
+        "ParameterValue": "main"
+      },
+      {
+        "ParameterKey": "GitHubToken",
+        "ParameterValue": " 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"
+      },
+      {
+        "ParameterKey": "GitHubUser",
+        "ParameterValue": "kenzaElassas"
+      }
+]

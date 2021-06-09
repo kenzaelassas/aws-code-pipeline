@@ -109,7 +109,7 @@ Resources:
                 - echo "IMAGE_URI=${IMAGE_URI}"
             build:
               commands:
-                - cd aws-code-pipeline/code-pipeline/container
+                - cd container
                 - docker build --tag "$IMAGE_URI" .
             post_build:
               commands:
